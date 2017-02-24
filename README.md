@@ -1,2 +1,2 @@
-# Arduino-With-Rotary-Encoder
-Arduino-With-Rotary-Encoder And MCP41010
+# Arduino-With-Rotary-Encoder-And-Digital Potentiometer MCP41010
+Arduino-With-Rotary-Encoder-And-Digital Potentiometer MCP41010
