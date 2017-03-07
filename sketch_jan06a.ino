@@ -1,8 +1,12 @@
 #include <SPI.h>
 
- #define pinA  3 // Connected to CLK on KY-040
- #define pinB  4 // Connected to DT on KY-040
- #define CS    5
+ #define pinA  3 // Pin 3 of Arduino connect to CLK on KY-040
+ #define pinB  4 // Pin 4 of Arduino connect to DT on KY-040
+
+ #define CS    5 // CS Pin of MCP41010 connect to pin 5 of Arduino
+				 // SCK Pin of MCP41010 connect to pin 13 of Arduino
+				 // SI Pin of MCP41010 connect to pin 11 of Arduino
+				 
 
  
  int encoderPosCount = 128; 
@@ -17,7 +21,7 @@ void MCP41010Write(unsigned char value);
    pinMode (CS,OUTPUT);
 
    pinALast = digitalRead(pinA);   
-   Serial.begin (115200);
+   Serial.begin (115200); //baud rate = 115200, 8 bit data, 1 bit stop, no parity bit
    SPI.begin();
  } 
 
